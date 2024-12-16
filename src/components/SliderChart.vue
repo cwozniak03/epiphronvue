@@ -3,7 +3,7 @@
 </template>
 
 <script>
-/*import Plotly from 'plotly.js-dist';*/
+import Plotly from 'plotly.js-dist';
 
 export default{
     props:['distData','gamma', 'chartID'],
@@ -114,7 +114,7 @@ export default{
             }
             let tmpPlot = [trace]
 
-            /*Plotly.newPlot(this.chartID, tmpPlot);*/
+            Plotly.newPlot(this.chartID, tmpPlot);
 
         }
     }
